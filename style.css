@@ -1,0 +1,676 @@
+@font-face{
+    font-family:'Archangelsk';
+    src: url('./font/ofont.ru_Archangelsk.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family:'Roboto';
+    src: url('./font/Roboto/static/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family:'Roboto';
+    src: url('./font/Roboto/static/Roboto-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Добавленные стили */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body{
+    font-family:'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0%;
+
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+h2{
+    font-family:'Archangelsk';
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 100%;
+}
+.container{
+    margin: 0px 17% 0px;
+}
+
+ul{
+    list-style: none;
+}
+.text_blue{
+    color: rgb(41, 134, 240);
+    font-weight: 700;
+}
+nav{
+    padding-top: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.logo{
+    width:100%;
+    height: auto;
+    display:inline-block ;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+.icons li{
+    margin-left: 40px;
+}
+.icons li:first-child{
+    margin-left: 0px;
+}
+.lending{
+    background-image: url('./img/11.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.yrasdel{
+    padding-top: 300px; /* Уменьшено с 631px */
+    margin-left: 30vw;
+    
+}
+.yrasdel_inner{
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    background: url('./img/Rectangle\ 59.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Изменено с contain на cover */
+}
+.yrasdel_inner button{
+    margin-top: 25px;
+}
+.black{
+    padding: 19px 50px;
+    background-color: black;
+}
+.black span{
+    color: #F8F200;
+    font-size: 24px;
+    font-weight: 700;
+}
+.yellow{
+    width: 192px;
+    padding: 15px 50px;
+    background-color: #F8F200;
+}
+.yellow span{
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.about .container{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.about p{
+    margin: 20px 0px 70px;
+}
+.images_group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; /* Изменено с space-evenly */
+    gap: 32px; /* Уменьшено с 32px */ 
+    
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.images_group_two{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.registration{
+    margin-top: 70px;
+    background-image:url('./img/22\ 1.png');
+    background-color:black;
+    background-repeat: repeat-x;
+    
+    color: #ffffff;
+}
+.registration_container_play{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 32px;
+
+    padding-top:85px;
+}
+.registration p{
+    margin: 39px 0px 25px;
+}
+.registration_container_forma{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 32px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+
+    padding: 20px;
+}
+form input[type="text"], input[type="email"]{
+    width: 100%;
+    height: 45px;
+    padding-left: 35px;
+
+    background-color: black;
+    color: #ffffff;
+    border-bottom:1px solid white;
+}
+form textarea{
+    height: 30%;
+
+    background-color: black;
+    color: #ffffff;
+    border: 2px #ffffff dashed;
+}
+
+.registration_container_forma_games{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Добавлено */
+    padding: 25px 20px 80px 164px; /* Уменьшен правый padding */
+
+    background-image: url('./img/layer_blue.png'), url('./img/layer_yellow.png');
+    background-repeat: no-repeat;
+    background-position: right, left;
+    background-size: auto, auto; /* Добавлено */
+}
+.soglasia{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+    gap: 10px;
+}
+.soglasia p 
+{ margin: 0px;}
+
+input[type="checkbox"]{
+color: #000000;
+accent-color: #F8F200;
+border: #4b4b4b;
+padding: 14px 14px;
+}
+.HP{
+    padding-top: 70px;
+    background-color: #F8F200;
+}
+.container_viar{
+
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.group_viar{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-bottom: 70px;
+}
+
+.group_viar_trio img{
+   max-width:  50vw;
+    height: auto;
+}
+.group_viar_trio{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 42px;
+}
+
+.container_viar p{
+    margin: 25px 0px;
+}
+.premium{
+    margin-bottom: 40px;
+}
+.premium li{
+    margin: 6px 0px 5px;
+}
+#vkladki:before{
+content: url('./img/auto_awesome_motion.svg');
+position: relative;
+top: 10px;
+left: 4px;
+width: 24px;
+height: 24px;
+margin-right: 10px;
+padding: 6px 0px 5px;
+}
+#color_lens:before{
+content: url('./img/color_lens.svg');
+position: relative;
+top: 10px;
+left: 4px;
+width: 24px;
+height: 24px;
+margin-right: 10px;
+}
+#stars:before{
+content: url('./img/auto_awesome.svg');
+position: relative;
+top: 10px;
+left: 4px;
+width: 24px;
+height: 24px;
+margin-right: 10px;
+}
+.pay .container{
+    margin: 0px;
+}
+.container_game{
+    display: flex;
+    flex-direction: row;
+}
+.container_game_fon {
+    background-image: url('./img/Untitled-1\ 1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.container_game_text{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: #ffffff;
+    
+    padding-left: 32px;
+    padding-top: 70px;
+    align-self: start;
+}
+.container_viar{
+    
+    margin-top: 70px;
+}
+.container_viar button{
+    margin-bottom: 80px;
+}
+.container_game ul{
+    margin: 15px 0px 70px;
+}
+.container_game li{
+    margin-bottom:15px ;
+}
+.container_game li:last-child{
+    margin-bottom:0px ;
+}
+.container_game h2{
+    margin-bottom: 25px;
+}
+
+
+#vubor{
+font-family: Roboto;
+font-weight: 700;
+font-size: 24px;
+line-height: 100%;
+color:#52BEDC
+}
+#disk::before{
+content: url('./img/disk.svg');
+position: relative;
+top: 6px;
+left: 2.67px;
+bottom: 5px;
+width: 26.67px;
+height: 26.67px;
+margin-right: 14px;
+}
+#futulur::before{
+content: url('./img/futlur.svg');
+position: relative;
+top: 6px;
+left: 4px;
+bottom: 5px;
+width: 24px;
+height: 24px;
+margin-right: 14px;
+}
+#spravocnik::before{
+content: url('./img/galery.svg');
+position: relative;
+top: 6px;
+left: 2.67px;
+bottom: 5px;
+width: 26.67px;
+height: 26.67px;
+margin-right: 14px;
+}
+.group_vubor{
+    margin-bottom: 70.73px;
+    margin-top: 24.5px;
+    display: inline-grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: baseline;
+    column-gap: 80px;
+    row-gap: 55px; 
+}
+.viar_text{
+    width: 100%;
+}
+
+.container_podval{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px
+}
+.container_podval_logo img:first-child{
+    margin-right: 32px;
+}
+.container_podval_href a:first-child{
+    margin-right: 32px;
+}
+#prava{
+background-color: #000000;
+position: static; 
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100vw;
+height: auto;
+margin: 0px -26% 0px ;
+padding: 13px 0px;
+color: #ffffff;
+}
+
+@media all and (max-width: 1800px) {
+    .yrasdel{
+        margin-left: 28vw;
+    }
+}
+
+@media all and (max-width: 1600px) {
+    .images_group{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .images_group_two{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+    .yrasdel{
+        margin-left: 22vw;
+    }
+    
+}
+@media all and (max-width: 1200px) {
+    .container{
+        margin: 0px 36px 0px;
+    }
+    .yrasdel {
+        margin-left: 35vw;
+    }
+}
+@media all and (max-width: 1024px) {
+    .container{
+        margin: 0px 36px 0px;
+    }
+
+    .logo{
+        width:100% ;
+        height: auto;
+    }
+
+    nav{
+        padding-top: 20px;
+    }
+    .yrasdel {
+        margin-left: 0; /* Убрано фиксированное значение */
+        padding-top: 560px; /* Установлено адекватное значение */
+    }
+
+    .yrasdel_inner {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 32vw;
+    }
+
+    .yrasdel_inner h2 {
+        font-size: 56px;
+        word-break: keep-all;
+    }
+    .images_group_one{
+        width: 100%;
+        height: auto;
+    }
+    .images_group_two{
+        flex-direction: row;
+    }
+    .registration_container_forma_games{
+        flex-direction: column;
+        background-position: top, bottom;
+        padding: 25px 20px 80px; /* Упрощен padding */
+    }
+    .registration_container_forma{
+        gap: 0px;
+    }
+    .registration_container_play{
+        flex-direction: column;
+    }
+    .registration p{
+        margin: 25px 0px 98px;
+    }
+    #nero{
+        padding-top: 42px;
+        width: 50vw;
+    }
+    .group_viar_trio{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 70px 125px;
+    }
+    .group_viar_trio img{
+        margin-top: 25px;
+    }
+    .container_game_fon {
+        width: 33%; 
+    }
+    #prava{
+        margin: 0px -36px 0px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+    }
+    h2, .yrasdel_inner h2{
+        font-size: 40px;
+        margin: 0px;
+    }
+    #nero{
+        width: 100%;
+        height: auto;
+    }
+    .container_podval_logo, 
+    .group_vubor, 
+    .group_viar_trio img {
+        width: 100%;
+        height: auto;
+    }
+    .yrasdel {
+        margin: 0px;
+        padding-top: 560px; /* Уменьшено для мобильных */
+    }
+    .yrasdel_inner{
+        margin: 0px;
+        padding: 0px;
+    }
+    .black, .yellow ~span{
+        font-size: 20px;
+    }
+    .container_viar{
+        flex-direction: column;
+    }
+    .images_group{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+    .group_viar_trio{
+        flex-direction: row;
+        padding: 0px;
+    }
+    .images_group_two {
+        flex-direction: column;
+    }
+    .registration_container_forma{
+        flex-direction: column;
+    }
+    .yrasdel_inner {
+        padding: 40px 30px; /* Уменьшен padding */
+    }
+}
+@media all and (max-width: 540px) {
+    .container_podval_logo img{
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        margin: 0 20px; /* Уменьшены отступы */
+    }
+      h2, .yrasdel_inner h2{
+        font-size: 30px;
+        margin: 0px;
+    }
+    }
+
+@media all and (max-width: 321px) {
+    h2, .yrasdel_inner h2{
+        font-size: 30px;
+    }
+    .yellow, .black{
+        padding: 10px 20px; /* Уменьшен padding */
+        width: 100%; /* На всю ширину */
+        text-align: center;
+    }
+    .yellow {
+        width: 100%; /* Переопределено для мобильных */
+    }
+    .yellow span, 
+    .black span {
+        font-size: 20px;
+    } 
+
+    .group_vubor img{
+        width: 100%;
+        height: auto;
+    }
+    .images_group{
+        padding: 0px;
+        margin: 0px;
+    }
+    .container_podval_logo img{
+        width: 100%;
+        height: auto;
+    }
+    p{
+        font-size: 16px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container_viar{
+        flex-direction: column;
+    }
+    .group_viar_trio{
+        flex-direction: column; /* Изменено с row на column */
+        align-items: center;
+        padding: 0;
+    }
+    
+    .group_viar_trio img {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .container_podval{
+        flex-direction: column;
+        gap: 15px; /* Добавлен отступ между элементами */
+    }
+    .yrasdel {
+        margin-left: 0px;
+        padding-top: 100px; /* Еще уменьшено для маленьких экранов */
+    }
+    .yrasdel_inner {
+        padding: 30px 20px; /* Уменьшен padding */
+    }
+    #nero{
+        width: 100%; /* Исправлено с 50vw */
+        height: auto;
+    }
+    
+    /* Дополнительные исправления для маленьких экранов */
+    .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .icons li {
+        margin: 10px 20px;
+    }
+    
+    .registration p {
+        width: 100%; /* На всю ширину */
+    }
+    
+    form {
+        margin-left: 0;
+        padding: 10px;
+    }
+    
+    .group_vubor {
+        grid-template-columns: 1fr; /* Одна колонка на маленьких экранах */
+        gap: 30px;
+    }
+}
